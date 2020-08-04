@@ -1,6 +1,6 @@
 //Modules
 const path =require('path');
-const fs = require('fs');
+//const fs = require('fs');
 const express = require('express');
 const app = express();
 const morgan =require("morgan");

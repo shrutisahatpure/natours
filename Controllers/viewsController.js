@@ -2,7 +2,7 @@ const Tour =require('../models/tourModel');
 const User =require('../models/userModel');
 const Booking =require('../models/bookingModel');
 const catchAsync = require('../utils/catchAsync');
-const AppError = require('../../referance/after-section-12/utils/appError');
+const AppError = require('../utils/appError');
 
 exports.getOverview = catchAsync(async (req,res) => {
  //1)get all tour data
