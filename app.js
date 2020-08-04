@@ -22,6 +22,7 @@ const viewRouter = require('./routes/viewRouters');
 const bookingRouter = require('./routes/bookingRoutes');
 const cookieParser = require('cookie-parser');
 
+//set pug file
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
