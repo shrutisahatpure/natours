@@ -21,6 +21,7 @@ const router = require('./routes/reviewRouters');
 const viewRouter = require('./routes/viewRouters');
 const bookingRouter = require('./routes/bookingRoutes');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 //set pug file
 app.set('view engine', 'pug');
@@ -69,6 +70,8 @@ app.use(hpp({
     ]
 }
 ));
+
+app.use(compression());
 
 // app.use((req,res,next) => {
 //     console.log("hello from the middleware");
